@@ -59,7 +59,7 @@ artifacts {
 }
 
 Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
+//properties.load(project.rootProject.file('local.properties').newDataInputStream())
 bintray {
     user = "osan2017"
     key = "94ce8027322c92529821ea78e71c57e4d8013af7"
