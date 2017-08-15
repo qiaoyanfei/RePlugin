@@ -10,4 +10,4 @@ before_install:
 - cd replugin-plugin-library
 - chmod +x gradlew
 script:
-- "./gradlew build bintrayUpload"
+- "./gradlew build bintrayUpload --info"
