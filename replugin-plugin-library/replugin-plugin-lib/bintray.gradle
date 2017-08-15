@@ -1,15 +1,15 @@
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-def siteUrl = '' // 项目的主页
-def gitUrl = '' // Git仓库的url
+def siteUrl = 'https://github.com/wangfuda/RePlugin' // 项目的主页
+def gitUrl = 'https://github.com/wangfuda/RePlugin.git' // Git仓库的url
 
 
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
         pom {
-            artifactId = ""
+            artifactId = "replugin-plugin-lib"
 
             project {
 
@@ -61,12 +61,13 @@ artifacts {
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 bintray {
-    user = ""
-    key = ""
+    user = "osan2017"
+    key = "94ce8027322c92529821ea78e71c57e4d8013af7"
     configurations = ['archives']
     pkg {
-        repo = '' // 上传到中央仓库的名称
-        name = '' // 上传到jcenter 的项目名称
+
+        repo = 'replugin' // 上传到中央仓库的名称
+        name = 'replugin-plugin-lib' // 上传到jcenter 的项目名称
         userOrg = ''
         desc = 'RePlugin - A flexible, stable, easy-to-use Android Plug-in Framework' // 项目描述
         websiteUrl = siteUrl
