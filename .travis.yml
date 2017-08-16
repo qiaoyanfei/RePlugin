@@ -16,5 +16,3 @@ script:
 - cd ../replugin-plugin-library
 - chmod +x gradlew
 - "./gradlew build bintrayUpload --info"
-  on:
-      tags: true
